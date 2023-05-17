@@ -37,7 +37,8 @@ To get a local copy of the project, you can follow these steps:
 4. Undo or redo actions if needed.
 5. Clear the canvas or save/download your drawing.
 6. Enjoy the interactive drawing experience!
-7. Feel free to customize the project according to your needs. You can modify the HTML, CSS, and JavaScript code to add additional features or change the design.
+
+Feel free to customize the project according to your needs. You can modify the HTML, CSS, and JavaScript code to add additional features or change the design.
 
 ## License
 
