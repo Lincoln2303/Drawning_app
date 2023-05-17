@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Drawing App</title>
+</head>
+<body>
+    <!-- I.01. We start by adding a canvas element (with an id "canvas"): -->
+    <!-- NOTE: This is going to give us an area, where we can use the canvas API on (we're also adding width and height inline) -->
+    <canvas id ="canvas" width="600" height="600"></canvas>
+    <!-- I.02. We're going to have our toolbar under the canvas: (NOTE: div with a class of toolbox)-->
+    <!-- NOTE: Here we can increase/decrease the size of the pen, change the color, and clean it -->
+    <div class="toolbox">
+        <!-- I.03. We add buttons with specific controls: (NOTE: See it on the id's) -->
+        <button id="decrease">-</button>
+        <span id="size">20</span>
+        <button id="increase">+</button>
+        <!-- I.04. Then we add a color input, and a button to clear the canvas: -->
+        <!-- AFTER: We move to our css (I.05.) -->
+        <input type="color" id="color">
+        <button id="clear">X</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* I.05. Small adjustments in the body: */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* NOTE: We use "overflow" on hidden, because we don't want scroll bars to be shown by default */
+    /* overflow: hidden; */
+    margin: 0;
+}
+
+/* I.06. Styling the canvas: */
+canvas {
+    border: 2px solid steelblue;
+    /* margin-top: 50px; */
+}
+
+/* I.07. Styling the toolbox: */
+.toolbox {
+    background-color: steelblue;
+    border: 1px solid slateblue;
+    /* NOTE: We're going to display it as flexbox */
+    display: flex;
+    width: 604px;
+    padding: 1rem ;
+}
+
+/* I.08. After we want all the buttons, and controls to be in a separate box: */
+/* NOTE: We can target everything in toolbox the following way (it doesn't matter what's the element) */
+.toolbox > * {
+    background-color: #fff;
+    border: none;
+    /* NOTE: We're going to display them inline-flex */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    /* NOTE: width and height for the white box */
+    height: 40px;
+    width: 40px;
+    /* NOTE: This will give space between them */
+    margin: .25rem;
+    padding: .15rem;
+    cursor: pointer;
+}
+
+/* I.09. We want the clear button (X) to be at the end: (NOTE: We use last-child) */
+/* AFTER: We'll use the canvas API in javascript in next lecture (section II.) */
+.toolbox > *:last-child {
+    margin-left: auto;
+}
+
+
+
