@@ -3,7 +3,7 @@ A web application that allows users to create drawings and sketches.
 
 ## Preview
 
-![Alt Text](img/.gif)
+![Alt Text](img/drawning_app.gif)
 
 ## Technologies Used
 
